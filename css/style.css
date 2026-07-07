@@ -2,43 +2,115 @@
    RESET
 =========================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 /* ===========================
    VARIABLES
 =========================== */
 
-:root{
-
-    --primary:
-    --secondary:
-    --dark:#222;
-    --white:#fff;
-
+:root {
+   --primary: #FE6D12;
+   --secondary: #2B2735;
+   --dark: #2B2735;
+   --section-padding: 60px 5%;
+   --section-padding-one-sens: 60px;
+   --section-padding-left-right: 5%;
+   --white: #fff;
+   --boutton-radius: 30px;
 }
 
 /* ===========================
    STYLE GENERAL
 =========================== */
-
-body{
-
-    font-family:Arial, Helvetica, sans-serif;
-    background:var(--secondary);
-
+.boutton{
+   height: 46px;
+   line-height: 46px;
+   padding: 0 30px;
+   display: inline-block;
+   border-radius: var(--boutton-radius);
+   border: 1px solid var(--primary);
+   color: var(--primary);
+   text-align: center;
+   text-decoration: none;
+}
+.boutton.primary{
+   background: var(--primary);
+   display: inline-block;
+   color: var(--white);
+   text-align: center;
+}
+body {
+   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ===========================
-   HEADER
-   
+/* =========================== HEADER =========================== */
+.app-header .header-top {
+   background: var(--dark);
+   height: 60px;
+   line-height: 60px;
+}
 
-=========================== */
+.app-header .header-top,
+.app-header .bare-menu {
+   padding: 0 var(--section-padding-left-right);
+}
 
+.app-header .header-top,
+.app-header .bare-menu,
+.app-header .menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
 
+.app-header .bare-menu {
+   height: 90px;
+   line-height: 90px;
+}
+
+.hero-section {
+   height: 100vh;
+   background: var(--secondary);
+   background-image: url('../img/1.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   text-align: center;
+   position: relative;
+}
+
+.app-header .menu li {
+   list-style: none;
+   padding: 0 15px;
+}
+
+.app-header a {
+   text-decoration: none;
+}
+
+.hero-section .caption {
+   background: rgba(0, 0, 0, .4);
+   color: var(--white);
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-items: center;
+   justify-content: center;
+   padding: 0 30%;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+.hero-section .caption h1{
+   font-size: 4rem;
+   padding-bottom: var(--section-padding-one-sens);
+}
 
 /* ===========================
    HERO
@@ -86,4 +158,3 @@ body{
 
 
 =========================== */
-
