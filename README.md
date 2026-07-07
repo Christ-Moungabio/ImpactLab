@@ -15,6 +15,7 @@ Notre mission est de développer le site vitrine d'une association fictive afin 
 | Danielle Benicia Akiana | Lead  |
 | Christ-Henoc Moungabio | Repo Admin |
 | Mboumaloko Kalla Clairline |
+| Mondzali Alphady, |
 
 
 ---
