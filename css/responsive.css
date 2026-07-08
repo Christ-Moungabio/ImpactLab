@@ -1,0 +1,47 @@
+/*************** Responsive design avec media queries *****************/
+@media(min-width: 1280px) {}
+
+@media(max-width: 768px) {
+  :root {
+    --section-padding: 20px;
+    --section-padding-one-sens: 20px;
+    --section-padding-left-right: 20px;
+    --boutton-radius: 30px;
+    --radius-medium: 15px;
+    --card-padding: 10px;
+    --grid-gap: 5px 15px;
+    --titre-padding-bottom: 20px;
+    --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --paragraphe-line-height: 26px;
+  }
+  .section-titre h2 {
+    font-size: 1.3em;
+  }
+  .grid-deux,
+  .grid-trois,
+  .grid-quatre,
+  .grid-cinq {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--grid-gap);
+  }
+
+  .site-footer .footer-bottom {
+    height: 100%;
+  }
+  .help-section .help-text,
+  .help-section .counter {
+    width: 100%;
+  }
+  .help-section .img-gb,
+  .hero-section .caption,
+  .hero-bottom .caption {
+    padding: var(--card-padding);
+  }
+
+  .hero-section .caption h1 {
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 375px) {}
