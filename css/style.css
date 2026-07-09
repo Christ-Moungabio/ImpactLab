@@ -19,7 +19,7 @@
    --blue: #3b67ce;
    --dark: #2B2735;
    --cover-bg: #F9FAFB;
-   --section-padding: 100px 10%;
+   --section-padding: 70px 10%;
    --section-padding-one-sens: 10%;
    --section-padding-left-right: 10%;
    --white: #fff;
@@ -36,15 +36,20 @@
    --gray-800: #3C3C3C;
    --gray-900: #0F172A;
    --rgba-one: 43,39,53;
-   --grid-gap: 10px 30px;
+   --grid-gap: 10px 15px;
    --titre-padding-bottom: 40px;
    --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
    --paragraphe-line-height: 26px;
+   --btn-height: 46px;
+   --btn-padding: 0 30px;
 }
 
 /* ===========================
    STYLE GENERAL
 =========================== */
+.mobile-menu{
+   display: none;
+}
 .primary{
    color: var(--primary);
 }
@@ -54,10 +59,23 @@
 .green{
    color: var(--green);
 }
+.center{
+   text-align: center;
+}
+.input-style{
+   display: block;
+   height: var(--btn-height);
+   width: 100%;
+   border-radius: var(--boutton-radius);
+   padding: var(--btn-padding);
+   border: 1px solid var(--gray-100);
+   background: var(--gray-100);
+}
 .boutton {
-   height: 46px;
-   line-height: 46px;
-   padding: 0 30px;
+   height: var(--btn-height);
+   font-size: 1em;
+   line-height: var(--btn-height);
+   padding: var(--btn-padding);
    display: inline-block;
    border-radius: var(--boutton-radius);
    border: 1px solid var(--primary);
@@ -66,6 +84,10 @@
    text-decoration: none;
    transition: .4s;
 }
+.boutton:hover{
+   background: var(--primary);
+   color: var(--white);
+}
 .boutton.primary {
    background: var(--primary);
    display: inline-block;
@@ -73,7 +95,8 @@
    text-align: center;
 }
 .boutton.primary:hover{
-   color: var(--white);
+   color: var(--primary);
+   background: transparent;
 }
 body {
    font-family: "Roboto", sans-serif;
@@ -164,8 +187,8 @@ h3{
 }
 
 .app-header .bare-menu {
-   height: 90px;
-   line-height: 90px;
+   height: 80px;
+   line-height: 80px;
    position: sticky;
    top: 0;
 }
@@ -367,7 +390,8 @@ h3{
    overflow: hidden;
 }
 .events-section article .content{
-   padding: calc(var(--card-padding) * 2) var(--card-padding);
+   padding: var(--card-padding);
+   padding-top: calc(var(--card-padding) * 2);
    position: relative;
 }
 .events-section article .content h3{
@@ -385,6 +409,56 @@ h3{
    color: var(--white);
    top: -40px;
    right: var(--card-padding);
+}
+
+/** Registration-section **/
+.registration-section{
+   background-image: url('../img/5.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.registration-section .caption{
+   background-color: rgba(var(--rgba-one), 0.5);
+   height: 70vh;
+   align-content: center;
+   color: var(--white);
+}
+.newslatter-section{
+   position: relative;
+   margin-top: -200px;
+}
+.newslatter-section .caption{
+   padding: calc(var(--card-padding) * 3);
+   border-radius: var(--card-padding);
+   background: var(--white);
+}
+.registration-section i{
+   font-size: 3em;
+}
+.registration-section h2{
+   color: var(--white);
+}
+.registration-section .caption .section-titre span{
+   width: 100px;
+   height: 100px;
+   padding: 0;
+   line-height: 100px;
+   border-radius: var(--radius-medium);
+   display: inline-block;
+   background: var(--primary);
+   color: var(--gray-100);
+   margin: auto;
+}
+.newslatter-section .caption i{
+   font-size: 3em;
+   margin-right: var(--card-padding);
+   color: var(--gray-100);
+}
+.newslatter-section .flex{
+   justify-content: start;
+}
+.newslatter-section form input{
+   margin-right: var(--card-padding);
 }
 /**Help section **/
 .help-section .img-gb{
