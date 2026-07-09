@@ -1,9 +1,49 @@
 <main>
-
     <!-- ===================================== -->
     <!-- CONTACT -->
     <!-- Responsable : Contact -->
     <!-- Formulaire HTML uniquement -->
     <!-- ===================================== -->
-
-</main>
+<section>
+         <h2>Contactez-nous</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Veuillez renseigner vos informations ici</legend>
+                    <label for="nom">Nom complet :</label><br>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom complet"  required><br><br>
+                    <label for="email">Adresse e-mail :</label><br>
+                    <input type="email" id="email" name="email"  placeholder="impactlab@email.com"  required><br><br>
+                    <label for="telephone">Téléphone :</label><br>
+                    <input type="tel" id="telephone"   name="telephone"  placeholder="+242 064351763"  required><br><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Votre demande</legend>
+                    <label for="sujet">Sujet :</label><br>
+                    <select id="sujet" name="sujet" required>
+                        <option value="">-- Choisissez un sujet --</option>
+                        <option>Demande d'information</option>
+                        <option>Faire un don</option>
+                        <option>Partenariat</option>
+                        <option>Signaler une urgence</option>
+                        <option>Autre</option>
+                    </select>
+                    <br><br>
+                    <label for="message">Votre message :</label><br>
+                    <textarea id="message"name="message" rows="8"  cols="50" placeholder="Écrivez votre message..." required></textarea>
+                    <br><br>
+                </fieldset>
+                <br>
+                <button type="submit">Envoyer le message</button>
+                <button type="reset">Réinitialiser</button>
+            </form>
+        </section>
+        <section>
+            <h2>Nos coordonnées</h2>
+            <p><strong>Association :</strong>ImpactLab</p>
+            <p><strong>Adresse :</strong> 114 Avenue des trois Martir, Brazzaville Congo</p>
+            <p><strong>Téléphone :</strong> +242 06 123 45 67</p>
+            <p><strong>Email :</strong> contact@impactlab.org</p>
+            <p><strong>Horaires :</strong> Lundi au Vendredi : 08h00 - 17h00</p>
+        </section>
+    </main>
