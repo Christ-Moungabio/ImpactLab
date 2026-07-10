@@ -1,0 +1,163 @@
+/*************** Responsive design avec media queries *****************/
+@media(max-width: 900px) {
+  :root {
+    --section-padding: 30px 25px;
+    --section-padding-one-sens: 25px;
+    --section-padding-left-right: 25px;
+    --boutton-radius: 30px;
+    --radius-medium: 15px;
+    --card-padding: 30px;
+    --grid-gap: 10px;
+    --titre-padding-bottom: 20px;
+    --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --paragraphe-line-height: 26px;
+  }
+  .hero-section .caption h1{
+    font-size: 2em;
+  }
+  .hero-section{
+    height: 60vh;
+  }
+  .hero-bottom .block-caption .flex i{
+    margin-right: var(--card-padding);
+  }
+
+  .section-titre h2 {
+    font-size: 2em;
+  }
+
+  .grid-deux,
+  .grid-trois,
+  .grid-quatre,
+  .grid-cinq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--grid-gap);
+  }
+
+  .mobile-none,
+  .app-header .bare-menu .menu {
+    display: none;
+  }
+
+  .help-section .img-gb,
+  .hero-section .caption,
+  .hero-bottom .caption {
+    padding: var(--card-padding);
+  }
+
+  .help-section .help-text,
+  .help-section .counter {
+    width: 100%;
+  }
+
+  .registration-section .caption {
+    height: 40vh;
+  }
+
+  .newslatter-section .caption {
+    padding: var(--card-padding);
+    background: var(--white);
+  }
+
+  .newslatter-section {
+    position: relative;
+    margin-top: -100px;
+  }
+
+  .help-section .img-gb img {
+    border-radius: var(--radius-medium);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .temoignage-section .temoignage-block .auteur {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    right: 0;
+    left: 0;
+  }
+
+  .temoignage-section .temoignage-block {
+    padding: var(--card-padding);
+    text-align: center;
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+}
+
+@media(max-width: 768px) {
+  :root {
+    --section-padding: 30px 10px;
+    --section-padding-one-sens: 20px;
+    --section-padding-left-right: 20px;
+    --boutton-radius: 30px;
+    --radius-medium: 15px;
+    --card-padding: 20px;
+    --grid-gap: 10px;
+    --titre-padding-bottom: 20px;
+    --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --paragraphe-line-height: 26px;
+  }
+.call{
+  font-size: .8em;
+  text-align: center;
+  width: 100%;
+}
+  .section-titre h2 {
+    font-size: 1.3em;
+  }
+
+  .grid-deux,
+  .grid-trois,
+  .grid-quatre,
+  .grid-cinq {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--grid-gap);
+  }
+
+  .site-footer .footer-bottom {
+    height: 100%;
+  }
+
+  .help-section .img-gb {
+    width: 100%;
+    padding: var(--card-padding);
+  }
+
+  .registration-section .caption .section-titre span {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .call-actions .flex i {
+    font-size: 2em;
+    margin-right: var(--card-padding);
+  }
+
+  .hero-bottom .block-caption .flex i {
+    font-size: 2em;
+    margin-right: var(--card-padding);
+  }
+
+  .hero-section .caption h1 {
+    font-size: 2rem;
+  }
+
+  .site-footer .caption {
+    padding: var(--section-padding);
+  }
+
+  .boutton {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+  }
+}
+
+@media(max-width: 375px) {}

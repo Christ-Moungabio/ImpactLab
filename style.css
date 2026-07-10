@@ -1,6 +1,4 @@
-/* ===========================
-   RESET
-=========================== */
+
 
 *{
     margin:0;
@@ -8,9 +6,6 @@
     box-sizing:border-box;
 }
 
-/* ===========================
-   VARIABLES
-=========================== */
 
 :root{
 
@@ -21,9 +16,7 @@
 
 }
 
-/* ===========================
-   STYLE GENERAL
-=========================== */
+/*  STYLE GENERAL */
 
 body{
 
@@ -32,242 +25,190 @@ body{
 
 }
 
-/* ===========================
-   HEADER
-   
-
-=========================== */
+/*   HEADER */
 
 
 
-/* ===========================
-   HERO
-   
-
-
-=========================== */
+/* HERO  */
 
 
 
-/* ===========================
-   ACTIONS
-   CSS GRID
-
-
-   
-=========================== */
+/* ACTIONS CSS GRID */
 
 
 
-/* ===========================
-   EVENTS
+/* NOS ACTIONS */
 
-=========================== */
+.container{
 
-/* ===========================
-   HERO
-=========================== */
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    
 
-.hero-events{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    background: var(--primary);
-    color: var(--white);
-
-    min-height: 60vh;
-    padding: 20px;
 }
 
-.hero-events h2{
-    font-size: 3rem;
-    margin-bottom: 20px;
+.hero-actions{
+
+    text-align:center;
+    padding:60px 20px;
+
 }
 
-.hero-events p{
-    max-width: 700px;
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-/* ===========================
-   EVENTS
-=========================== */
+.hero-actions h1{
 
-.hero-events{
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ),
-    url("images/imdadul-hussain-YiA4wqVpLQQ-unsplash.jpg");
+    margin-bottom:20px;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    height: 70vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    color: white;
-    padding: 20px;
 }
 
-.events h1{
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 10px;
+.hero-actions p{
+
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+
 }
 
-.events p{
-    text-align: center;
-    color: #555;
-    margin-bottom: 40px;
+.actions{
+
+    padding:50px 0;
+
 }
 
-.event-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;   /* Centre horizontalement */
-    text-align: center;    /* Centre le texte */
+.actions h2{
 
-    padding: 25px;
-    flex: 1;
-}
-/* ===========================
-   GRID
-=========================== */
+    text-align:center;
+    margin-bottom:40px;
 
-.event-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
 }
 
-/* ===========================
-   CARDS
-=========================== */
+.actions-grid{
 
-.event-card{
-    background: var(--white);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,.1);
-    transition: transform .3s ease;
+    display:grid;
 
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+    transition:.3s;
+    
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.card h3{
+
+    padding:20px 20px 10px;
+
+}
+
+.card p{
+
+    padding:0 20px 20px;
+
+    line-height:1.6;
+
+}
+
+
+.statistics{
+
+    padding:60px 0;
+
+}
+
+.statistics h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.stats{
 
     display:flex;
-    flex-direction:column;
+    justify-content:space-around;
+    gap:20px;
+    flex-wrap:wrap;
 
-    height:100%;
-}
-.event-card:hover{
-    transform: translateY(-8px);
 }
 
-.event-card img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display:block;
+.stat{
+
+    background:white;
+    width:220px;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+
 }
 
-.event-card h2{
-    margin: 20px 15px 10px;
-    color: var(--primary);
+.stat h3{
+
+    font-size:2rem;
+    margin-bottom:10px;
+
 }
 
-.event-card p{
-    margin: 0 11px 10px;
-    color: #555;
-    line-height: 1.6;
-    text-align: left;
-}
-/* ===========================
-   BOUTON
-=========================== */
+/*   RESPONSIVe */
 
-.btn-orange{
-    display: inline-block;
-    margin: 40px auto 0;
-    padding: 12px 30px;
-    background: var(--orange);
-    color: var(--white);
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: .3s;
+@media(max-width:768px){
+
+    .actions-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
 }
 
-.btn-orange:hover{
-    background: #e65c00;
-}
-/* ===========================
-   RESPONSIVE
-=========================== */
-@media (max-width: 768px){
+@media(max-width:375px){
 
-    .hero-events h2{
-        font-size: 2.3rem;
+    .actions-grid{
+
+        grid-template-columns:1fr;
+
     }
 
-    .hero-events p{
-        font-size: 1rem;
+    .stats{
+
+        flex-direction:column;
+
+        align-items:center;
+
     }
 
-    .event-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 375px){
-
-    .hero-events{
-        min-height: 50vh;
-    }
-
-    .hero-events h2{
-        font-size: 1.8rem;
-    }
-
-    .hero-events p{
-        font-size: .95rem;
-    }
-
-    .event-grid{
-        grid-template-columns: 1fr;
-    }
-
-    .event-card img{
-        height: 180px;
-    }
-
-    .btn-orange{
-        width: 100%;
-        text-align: center;
-    }
 }
 
-/* ===========================
-   CONTACT
-
-
-=========================== */
 
 
 
-/* ===========================
-   FOOTER
 
-
-=========================== */
 
 
