@@ -2,38 +2,445 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-    <title>ImpactLab</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+    integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+  <!-- ================= HEADER ================= -->
+  <header class="app-header">
+    <div class="header-top">
+      <div class="call">
+        <a href="tel:069000909"><i class="fas fa-phone-square"></i> +242069000909</a>
+        <a href="mailto:impactlab@gmail.com"><i class="fas fa-envelope"></i> impactlab@gmail.com</a>
+      </div>
+      <div class="sociaux mobile-none">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <nav class="bare-menu">
+      <a href="./index.html" id="logo">Impact<span>lab</span></a>
+      <ul class="menu">
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./events.html">Evenements</a></li>
+        <li><a href="./actions.html">Nos actions</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <a href="./contact.html" class="boutton primary">Faire un Don</a>
+    </nav>
+  </header>
 
-    <header>
+  <main>
 
-        <!-- A faire : Navigation  -->
+    <!-- SECTION HERO -->
+    <section class="hero-section">
+      <div class="caption">
+        <h1>Aidez les pauvres dans le monde</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint officia pariatur reprehenderit, nisi similique
+          blanditiis doloremque corrupti</p>
+        <a href="#" class="boutton primary">En savoir plus</a>
+      </div>
+    </section>
+    <section class="hero-bottom">
+      <div class="caption grid-trois">
+        <div class="block-caption">
+          <div class="flex">
+            <i class="fas fa-hands primary"></i>
+            <h2>Devenez bénévole</h2>
+          </div>
+          <p>Devenez bénévole si vous êtes motivé et prêt à soutenir les personnes et la communauté.</p>
+        </div>
+        <div class="block-caption">
+          <div class="flex">
+            <i class="fas fa-wallet blue"></i>
+            <h2>Collecte de fonds rapide</h2>
+          </div>
+          <p>Le moyen le plus simple et le plus rapide de faire un don et de soutenir ainsi les personnes dans le
+            besoin.</p>
+        </div>
+        <div class="block-caption">
+          <div class="flex">
+            <i class="fas fa-heart green"></i>
+            <h2>Commencez à faire un don</h2>
+          </div>
+          <p>Commencez à faire un don pour nos campagnes de soutien aux personnes démunies et aux enfants qui retournent
+            à l'école.</p>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION HERO -->
 
-    </header>
+    <!-- AIDE SECTION -->
+    <section class="custom-section grid-deux help-section">
+      <div class="img-gb">
+        <img src="/img/6.jpg" class="responsive" alt="">
+      </div>
+      <div class="help-text">
+        <div class="section-titre">
+          <span>Aider aujourd'hui</span>
+          <h2>Notre objectif est d'aider les pauvres</h2>
+        </div>
 
-    <main>
+        <p>Aujourd'hui, nous avons soutenu l'éducation de 20 000 enfants issus de familles pauvres dans 12 pays en
+          développement. À l'avenir, nos objectifs sont:</p>
 
-       
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Ayez suffisamment de nourriture pour vivre.</li>
+          <li><i class="fas fa-check-circle"></i> Les enfants pauvres peuvent retourner à l'école.</li>
+          <li><i class="fas fa-check-circle"></i> Aider les personnes pauvres à trouver de meilleurs emplois.</li>
+        </ul>
 
+        <div class="counter flex">
+          <i class="fas fa-donate"></i>
+          <div>
+            <h3>86 700</h3>
+            <span>Campagnes réussies</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN AIDE SECTION -->
 
+    <!-- CAUSES SECTION -->
+    <section class="causes-section custom-section white-bg">
+      <div class="section-titre">
+        <span>Aidez le peuple</span>
+        <h2>Notre objectif est d'aider les pauvres</h2>
+      </div>
 
-    </main>
+      <div class="grid-quatre">
+        <div class="cause-block">
+          <img src="img/1.jpg" class="responsive" alt="">
+          <div class="content">
+            <h3>Dons pour les enfants</h3>
+            <p>Cet événement présente le moyen le plus efficace de soutenir...</p>
+          </div>
+          <div class="progress">
+            <span>10%</span>
+            <div class="progresse-bande">
+              <div class="progressing" style="width: 10%;"></div>
+            </div>
+            <div class="flex">
+              <h4>7 104, 00$</h4>
+              <span>Soulevé</span>
+            </div>
+            <div class="flex">
+              <h4>2 millions de dollars</h4>
+              <span>But</span>
+            </div>
+          </div>
+        </div>
+        <div class="cause-block">
+          <img src="img/2.jpg" class="responsive" alt="">
+          <div class="content">
+            <h3>Dons alimentaires</h3>
+            <p>Cet événement présente le moyen le plus efficace de soutenir...</p>
+          </div>
+          <div class="progress">
+            <span>30%</span>
+            <div class="progresse-bande">
+              <div class="progressing" style="width: 30%;"></div>
+            </div>
+            <div class="flex">
+              <h4>10 126.00$</h4>
+              <span>Soulevé</span>
+            </div>
+            <div class="flex">
+              <h4>1 million de dollars</h4>
+              <span>But</span>
+            </div>
+          </div>
+        </div>
+        <div class="cause-block">
+          <img src="img/3.jpg" class="responsive" alt="">
+          <div class="content">
+            <h3>Formulaire de don</h3>
+            <p>Cet événement présente le moyen le plus efficace de soutenir...</p>
+          </div>
+          <div class="progress">
+            <span>98%</span>
+            <div class="progresse-bande">
+              <div class="progressing" style="width: 98%;"></div>
+            </div>
+            <div class="flex">
+              <h4>1095.00$</h4>
+              <span>Soulevé</span>
+            </div>
+            <div class="flex">
+              <h4>10 millions de dollars</h4>
+              <span>But</span>
+            </div>
+          </div>
+        </div>
+        <div class="cause-block">
+          <img src="img/4.jpg" class="responsive" alt="">
+          <div class="content">
+            <h3>Formulaire de don</h3>
+            <p>Cet événement présente le moyen le plus efficace de soutenir...</p>
+          </div>
+          <div class="progress">
+            <span>98%</span>
+            <div class="progresse-bande">
+              <div class="progressing" style="width: 98%;"></div>
+            </div>
+            <div class="flex">
+              <h4>1095.00$</h4>
+              <span>Soulevé</span>
+            </div>
+            <div class="flex">
+              <h4>10 millions de dollars</h4>
+              <span>But</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN CAUSES SECTION -->
 
-    
+    <!-- CALL ACTION SECTION -->
+    <section class="call-actions">
+      <div class="caption custom-section">
+        <div class="grid-deux">
+          <div>
+            <div class="section-titre">
+              <span>Aider aujourd'hui</span>
+              <h2>Nous aidons les personnes dans le besoin à travers le monde.</h2>
+            </div>
+            <a href="contact.html" class="boutton primary"><i class="fas fa-heart"></i> Faire un don</a>
+          </div>
+          <div>
+            <div class="flex">
+              <i class="fas fa-shopping-cart"></i>
+              <div>
+                <h3>Aliments sains</h3>
+                <p>Des millions de personnes n'ont pas assez à manger, c'est pourquoi nous nous efforçons de nourrir les
+                  affamés.</p>
+              </div>
+            </div>
+            <hr>
+            <div class="flex">
+              <i class="fas fa-filter"></i>
+              <div>
+                <h3>Eau propre</h3>
+                <p>Notre objectif est de fournir de l'eau potable aux personnes qui n'ont pas accès à l'eau potable.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CALL ACTION SECTION -->
 
-    <footer>
+    <!-- TESTIMONY SECTION -->
+    <section class="temoignage-section custom-section">
+      <div class="section-titre">
+        <span>Les gens heureux</span>
+        <h2>Ce qu'ils disent</h2>
+      </div>
+      <div class="grid-trois">
+        <div class="temoignage-block">
+          <p>Asting a réalisé de nombreuses actions en faveur des populations défavorisées, notamment en aidant les
+            enfants de familles pauvres à retourner à l'école et en fournissant de l'eau potable à des milliers de
+            personnes. Leur travail est remarquable.</p>
+          <div class="auteur">
+            <h3>Jessica Brown</h3>
+            <img src="img/ts-1.jpg" alt="">
+          </div>
+        </div>
+        <div class="temoignage-block">
+          <p>Ils ont permis à des milliers d'enfants à travers le monde de rester en bonne santé, scolarisés et en
+            sécurité. Ils ont œuvré dans les régions les plus reculées, où vivent de nombreuses personnes dans le
+            besoin.</p>
+          <div class="auteur">
+            <h3>Kevin Martin</h3>
+            <img src="img/ts-2.jpg" alt="">
+          </div>
+        </div>
+        <div class="temoignage-block">
+          <p>Asting a réalisé de nombreuses actions en faveur des populations défavorisées, notamment en aidant les
+            enfants de familles pauvres à retourner à l'école et en fournissant de l'eau potable à des milliers de
+            personnes. Leur travail est remarquable.</p>
+          <div class="auteur">
+            <h3>David Cooper</h3>
+            <img src="img/ts-3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN TESTIMONY SECTION -->
 
-    </footer>
+    <!-- REGISTRATION SECTION -->
+    <section class="registration-section">
+      <div class="caption custom-section">
+        <div class="section-titre center">
+          <span><i class="fas fa-hands"></i></span>
+          <h2>Rejoignez le groupe des bénévoles</h2>
+        </div>
+      </div>
+    </section>
+    <section class="newslatter-section custom-section">
+      <div class="caption grid-deux">
+        <div class="section-titre flex">
+          <i class="fas fa-envelope-open"></i>
+          <div>
+            <span>S'abonner</span>
+            <h2>Ce qu'ils disent</h2>
+          </div>
+        </div>
+        <form action="#" class="flex">
+          <input class="input-style" placeholder="Saisissez votre adresse e-mail..." type="text">
+          <button type="submit" class="boutton primary">S'abonner</button>
+        </form>
+      </div>
+    </section>
+    <!-- FIN REGISTRATION SECTION -->
+
+    <!-- EVENTS -->
+    <section class="custom-section events-section white-bg">
+      <div class="flex">
+        <div class="section-titre">
+          <span>Extrait du blog</span>
+          <h2>Actualités et articles</h2>
+        </div>
+        <a href="events.html" class="boutton primary">Voir toutes les actualités</a>
+      </div>
+      <div class="grid-quatre">
+        <article>
+          <img src="img/1.jpg" class="responsive" alt="">
+          <div class="content">
+            <span class="date">
+              20 Jan
+            </span>
+            <h3>Meilleures solutions pour aider les sans-abri</h3>
+            <a href="#" class="boutton">Voir+</a>
+          </div>
+        </article>
+        <article>
+          <img src="img/2.jpg" class="responsive" alt="">
+          <div class="content">
+            <span class="date">
+              10 Mars
+            </span>
+            <h3>Meilleures solutions pour aider les sans-abri</h3>
+            <a href="#" class="boutton">Voir+</a>
+          </div>
+        </article>
+        <article>
+          <img src="img/3.jpg" class="responsive" alt="">
+          <div class="content">
+            <span class="date">
+              12 Mai
+            </span>
+            <h3>Meilleures solutions pour aider les sans-abri</h3>
+            <a href="#" class="boutton">Voir+</a>
+          </div>
+        </article>
+        <article>
+          <img src="img/4.jpg" class="responsive" alt="">
+          <div class="content">
+            <span class="date">
+              20 Dec
+            </span>
+            <h3>Meilleures solutions pour aider les sans-abri</h3>
+            <a href="#" class="boutton">Voir+</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- FIN EVENTS -->
+
+    <!-- GALERIE SECTION -->
+    <section class="custom-section galerie-section">
+      <div class="section-titre">
+        <span>Galérie</span>
+        <h2>Nos dernières activités.</h2>
+      </div>
+      <div class="grid-cinq">
+        <div>
+          <img src="img/1.jpg" class="responsive" alt="">
+        </div>
+        <div>
+          <img src="img/2.jpg" class="responsive" alt="">
+        </div>
+        <div>
+          <img src="img/3.jpg" class="responsive" alt="">
+        </div>
+        <div>
+          <img src="img/4.jpg" class="responsive" alt="">
+        </div>
+        <div>
+          <img src="img/2.jpg" class="responsive" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- FIN GALERIE SECTION -->
+  </main>
+
+  <!-- Footer -->
+  <!-- Responsable : Contact -->
+
+  <footer class="site-footer">
+    <div class="caption grid-quatre">
+      <div class="tabs">
+        <a href="./index.html" id="logo">
+          <h3>Impact<span>Lab</span></h3>
+        </a>
+        <p>ImpactLab est une organisation à but non lucratif qui soutient les personnes dans le monde entier et veille à
+          l'avenir.</p>
+        <div class="sociaux">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="tabs">
+        <h3>Explorer</h3>
+        <ul>
+          <li><a href="./contact.html">Faire un don</a></li>
+          <li><a href="./events.html">Evenements à venir</a></li>
+          <li><a href="./contact.html">Collecte de fonds</a></li>
+          <li><a href="./contact.html">Aide</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="tabs">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:242069000987"><i class="fas fa-phone-square"></i> +242069000987</a></li>
+          <li><a href="mailto:contact@impactlab.com"><i class="fas fa-envelope"></i> contact@impactlab.com</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> 40 Avenue de France</a></li>
+        </ul>
+      </div>
+      <div class="tabs">
+        <h3>Soutien</h3>
+        <p>Grâce à nos employés et bénévoles comenthousiastes, nous sommes prêts à vous soutenir à tout moment.</p>
+        <a href="./contact.html" class="boutton primary"><i class="fas fa-heart"></i> Faire un don</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="copyrighting">
+        <p>&copy; Copyright 2021 par ImpactLab</p>
+      </div>
+      <ul>
+        <li><a href="#">politique de confidentialité</a></li>
+        <li><a href="#">Conditions générales</a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 
